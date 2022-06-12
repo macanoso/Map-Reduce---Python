@@ -5,15 +5,15 @@ import sys
 
 if __name__ == "__main__":
 
-    lista = []
+    lista1 = []
 
     for line in sys.stdin:
-        key, val = line.split("\t")
+        key, val = line.split(",")
         val = int(val)
 
-        lista.append((key, val))
+        lista1.append((key, val))
 
-        lista.sort(key=lambda i: i[1], reverse=False)
+        lista1.sort(key=lambda i: i[1], reverse=False)
 
-    for elemento in lista:
+    for elemento in lista1:
         sys.stdout.write("{},{}\n".format(elemento[0], elemento[1]))

@@ -6,5 +6,5 @@ import sys
 if __name__ == "__main__":
 
     for line in sys.stdin:
-        a, b = line.split(",")
-        sys.stdout.write("{}\t{}".format(a, b))
+        lista = line.split(",")
+        sys.stdout.write("{},{}\n".format(lista[0], lista[1].strip()))
